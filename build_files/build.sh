@@ -11,16 +11,23 @@ set -ouex pipefail
 
 # this installs a package from fedora repos
 dnf5 install -y gcc
+dnf5 install -y golang
+dnf5 install -y podman
 dnf5 install -y niri
-dnf5 install -y fuzzel
-dnf5 install -y swaybg
 dnf5 install -y jetbrains-mono-fonts-all
-dnf5 install -y alacritty
+dnf5 install -y nvim
+dnf5 install -y ncdu
+dnf5 install -y firefox
 
 # COPR install
 dnf5 -y copr enable errornointernet/quickshell
 dnf5 -y install quickshell
 dnf5 -y copr disable errornointernet/quickshell
+
+dnf5 -y copr enable avengemedia/dms
+dnf5 -y install dms
+dnf5 -y copr disable avengemedia/dms
+
 
 # Use a COPR Example:
 #
@@ -31,4 +38,5 @@ dnf5 -y copr disable errornointernet/quickshell
 
 #### Example for enabling a System Unit File
 
+systemctl --user add-wants niri.service dms
 systemctl enable podman.socket
