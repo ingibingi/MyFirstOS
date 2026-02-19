@@ -16,8 +16,6 @@ dnf5 install -y fuzzel
 dnf5 install -y swaybg
 dnf5 install -y jetbrains-mono-fonts-all
 dnf5 install -y alacritty
-dnf5 install -y yazi
-
 
 # COPR install
 dnf5 -y copr enable errornointernet/quickshell
