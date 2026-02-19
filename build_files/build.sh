@@ -10,7 +10,14 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
+dnf5 install -y gcc
 dnf5 install -y niri
+dnf5 install -y fuzzel
+dnf5 install -y swaybg
+dnf5 install -y jetbrains-mono-fonts-all
+dnf5 install -y alacritty
+dnf5 install -y yazi
+
 
 # COPR install
 dnf5 -y copr enable errornointernet/quickshell
