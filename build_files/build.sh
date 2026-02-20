@@ -12,6 +12,10 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf5 install -y gcc
 dnf5 install -y golang
+dnf5 install -y lua
+dnf5 install -y rustup
+    rustup-init -y
+dnf5 install -y openssh
 dnf5 install -y podman
 dnf5 install -y niri
 dnf5 install -y jetbrains-mono-fonts-all
