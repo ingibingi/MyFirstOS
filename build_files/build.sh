@@ -18,6 +18,7 @@ dnf5 install -y jetbrains-mono-fonts-all
 dnf5 install -y nvim
 dnf5 install -y ncdu
 dnf5 install -y firefox
+dnf5 install -y input-remapper
 
 # COPR install
 dnf5 -y copr enable errornointernet/quickshell
@@ -39,3 +40,6 @@ dnf5 -y copr disable avengemedia/dms
 #### Example for enabling a System Unit File
 
 # systemctl enable podman.socket
+systemctl enable input-remapper
+systemctl enable niri
+systemctl enable dms
