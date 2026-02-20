@@ -13,8 +13,6 @@ set -ouex pipefail
 dnf5 install -y gcc
 dnf5 install -y golang
 dnf5 install -y lua
-dnf5 install -y rustup
-    rustup-init -y
 dnf5 install -y openssh
 dnf5 install -y podman
 dnf5 install -y niri
