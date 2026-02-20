@@ -44,5 +44,3 @@ dnf5 -y copr disable avengemedia/dms
 
 # systemctl enable podman.socket
 systemctl enable input-remapper
-systemctl enable niri
-systemctl enable dms
