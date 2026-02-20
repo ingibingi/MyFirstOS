@@ -18,7 +18,6 @@ dnf5 install -y rustup
 dnf5 install -y openssh
 dnf5 install -y podman
 dnf5 install -y niri
-dnf5 install -y jetbrains-mono-fonts-all
 dnf5 install -y nvim
 dnf5 install -y ncdu
 dnf5 install -y firefox
