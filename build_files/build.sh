@@ -20,6 +20,7 @@ dnf5 install -y nvim
 dnf5 install -y ncdu
 dnf5 install -y firefox
 dnf5 install -y input-remapper
+dnf5 install -y virt-manager
 
 # COPR install
 dnf5 -y copr enable errornointernet/quickshell
