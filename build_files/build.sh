@@ -24,9 +24,7 @@ dnf5 -y install dms
 dnf5 -y install dms-greeter
 dnf5 -y copr disable avengemedia/dms
 
-systemctl --user enable dsearch
 systemctl enable greetd
-
 
 
 # Use a COPR Example:
