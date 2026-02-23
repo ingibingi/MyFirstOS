@@ -17,12 +17,11 @@ dnf5 install -y nvim
 dnf5 install -y ncdu
 dnf5 install -y firefox
 dnf5 install -y virt-manager
-dnf5 install -y greetd
+dnf5 install -y tuigreet #greetd TUI-greeter
 
 # COPR install
 dnf5 -y copr enable avengemedia/dms
 dnf5 -y install dms
-dnf5 -y install dms-greeter
 dnf5 -y copr disable avengemedia/dms
 
 systemctl enable greetd
