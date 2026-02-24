@@ -18,6 +18,7 @@ dnf5 install -y ncdu
 dnf5 install -y firefox
 dnf5 install -y virt-manager
 dnf5 install -y tuigreet #greetd TUI-greeter
+dnf5 install -y luarocks #necessary for lazy.nvim
 
 # COPR install
 dnf5 -y copr enable avengemedia/dms
@@ -25,7 +26,6 @@ dnf5 -y install dms
 dnf5 -y copr disable avengemedia/dms
 
 systemctl enable greetd
-
 
 # Use a COPR Example:
 #
@@ -37,4 +37,3 @@ systemctl enable greetd
 #### Example for enabling a System Unit File
 
 # systemctl enable podman.socket
-
