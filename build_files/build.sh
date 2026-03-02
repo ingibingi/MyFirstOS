@@ -20,6 +20,7 @@ dnf5 install -y virt-manager
 dnf5 install -y tuigreet #greetd TUI-greeter
 dnf5 install -y luarocks #necessary for lazy.nvim
 dnf5 install -y brightnessctl
+dnf5 install -y nautilus
 
 # COPR install
 dnf5 -y copr enable avengemedia/dms
